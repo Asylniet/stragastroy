@@ -252,6 +252,9 @@ svg {
     &:hover {
         border-bottom: 2px solid #98D7CE;
     }
+    span::after {
+        content: " шаг";
+    }
 }
 
 .tab.active {
@@ -467,6 +470,10 @@ button:disabled {
     }
 }
 
+input[type="radio"] {
+    border-radius: 0;
+}
+
 .form {
     width: 30%;
     margin-left: auto;
@@ -505,6 +512,9 @@ button:disabled {
 @media screen and (max-width: 640px) {
     .tab-name {
         display: none;
+    }
+    .tab span::after {
+        content: "";
     }
 }
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -235,6 +236,9 @@ svg {
 .tab:hover {
   border-bottom: 2px solid #98D7CE;
 }
+.tab span::after {
+  content: " шаг";
+}
 
 .tab.active {
   color: #98D7CE;
@@ -444,6 +448,10 @@ button:disabled {
   max-width: 350px;
 }
 
+input[type=radio] {
+  border-radius: 0;
+}
+
 .form {
   width: 30%;
   margin-left: auto;
@@ -476,6 +484,9 @@ button:disabled {
 @media screen and (max-width: 640px) {
   .tab-name {
     display: none;
+  }
+  .tab span::after {
+    content: "";
   }
 }
 @media screen and (max-width: 795px) {
