@@ -511,6 +511,18 @@ input[name=floor1], input[name=bedroom] {
     width: 100%;
     max-width: 300px;
   }
+  .params {
+    width: 100%;
+  }
+  .params .flex {
+    margin-bottom: 5px;
+    width: 100%;
+    border-bottom: 1px solid #8B8B8B;
+    padding-bottom: 10px;
+  }
+  .params .flex > * {
+    flex: 1;
+  }
 }
 @media screen and (min-width: 1100px) {
   .swiper.images .swiper-wrapper {
