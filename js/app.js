@@ -6,10 +6,32 @@ const swiper = new Swiper('.swiper.images', {
         drageSize: 40,
         enabled: true,
     },
-    slidesPerView: 6,
+    slidesPerView: 2,
     slideToClickedSlide: true,
     centeredSlides: true,
     mousewheel: true,
+    breakpoints: {
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 3,
+        scrollbar: {
+            enabled: true,
+        }
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 4,
+        scrollbar: {
+            enabled: true,
+        },
+      },
+      1100: {
+        slidesPerView: 6,
+        scrollbar: {
+            enabled: true,
+        },
+      }
+    }
 });
 
 const scrollbarDrag = document.querySelector('.swiper.images').querySelector('.swiper-scrollbar-drag');

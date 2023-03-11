@@ -150,7 +150,7 @@ svg {
     .swiper-wrapper {
         padding-bottom: 80px;
         position: relative;
-        left: -37%;
+        left: -20%;
         transform: translate(-50%);
     }
     
@@ -483,5 +483,48 @@ button:disabled {
     }
     button {
         display: block;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .swiper.images {
+        .swiper-wrapper {
+            left: -28%;
+        }
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .swiper.images {
+        .swiper-wrapper {
+            left: -32%;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .tab-name {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 795px) {
+    .data {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px;
+        .form {
+            margin-left: 0;
+            width: 100%;
+            max-width: 300px;
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .swiper.images {
+        .swiper-wrapper {
+            left: -37%;
+        }
     }
 }
