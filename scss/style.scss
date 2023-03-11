@@ -363,6 +363,13 @@ input[type=number] {
     }
 }
 
+input[type="radio"] {
+    appearance: none;
+    &:not([type="button"]):not([type="submit"]):not([type="file"]) {
+        padding: 0;
+    }
+}
+
 .option.radio {
     width: 300px;
 }
@@ -424,9 +431,9 @@ button:disabled {
         color: currentColor;
         width: 20px;
         height: 20px;
-        border: 30px solid currentColor;
+        border: 1px solid currentColor;
         border-radius: 50%;
-        transform: translateY(-0.075em);
+        transform: translateY(2px);
         display: grid;
         place-content: center;
         position: relative;
@@ -435,6 +442,8 @@ button:disabled {
         &::before {
             content: "";
             position: absolute;
+            left: -1px;
+            top: -1px;
             width: 20px;
             height: 20px;
             border-radius: 50%;
@@ -453,8 +462,14 @@ button:disabled {
         &::before {
             content: "";
             border-radius: 0;
+            top: 0;
+            left: 0;
         } 
     }
+}
+
+input[name="floor1"] {
+    border-radius: 0;
 }
 
 .params .flex {
@@ -468,10 +483,6 @@ button:disabled {
             max-width: 350px;
         }
     }
-}
-
-input[type="radio"] {
-    border-radius: 0;
 }
 
 .form {
