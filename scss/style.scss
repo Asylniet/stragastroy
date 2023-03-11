@@ -545,6 +545,10 @@ input[name="floor1"], input[name="bedroom"] {
             width: 100%;
             border-bottom: 1px solid #8B8B8B;
             padding-bottom: 10px;
+            &:last-child {
+                border-bottom: none;
+                margin-bottom: none;
+            }
             & > * {
                 flex: 1;
             }
